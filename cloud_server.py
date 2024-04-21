@@ -1,13 +1,7 @@
-from fastapi import FastAPI, Response
-from fastapi.responses import StreamingResponse
-import asyncio
-import subprocess
+from fastapi import FastAPI
 from pydantic import BaseModel
 import uvicorn
-from pymodbus.client import ModbusSerialClient as ModbusClient
-import serial
 from pymongo import MongoClient
-import json
 
 app = FastAPI()
 
